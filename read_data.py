@@ -4,7 +4,6 @@ import matplotlib.pyplot as plt
 
 # access data with shared access signature
 account_name = 'inmobiai'
-sas_token = '?sv=2018-03-28&si=cmu&sr=c&sig=FK4PQuYU3nRB4IYZpkrTHbQ8FHyfn%2BBDRDh0ka%2BKHcM%3D' # shared separately
 container = 'cmu'
 account_url = "https://{}.blob.core.windows.net/".format(account_name)
 blob_service_client = BlobServiceClient(account_url=account_url, credential=sas_token)
